@@ -1,0 +1,126 @@
+/* ------------------------------- 1. Typography ----------------------------------- */
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+/* ------------------------------- 2. Menu ----------------------------------------- */
+.menu {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+/* --------------- 2.1 Navbar ------------------------- */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.nav-logo {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    list-style: none;
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    justify-content: stretch;
+}
+
+.nav-btn button {
+    width: 100%;
+}
+
+/* ------------------------------- 3. Content -------------------------------------- */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    flex-basis: 250px;
+    flex-grow: 10;
+    overflow: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height : 300px;
+    background-image: url('../assets/placeholder-image.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.hero-text {
+    flex-basis: 500px;
+    flex-grow: 0.5;
+    text-align: center;
+}
+
+/* ------------------------ 3.1 Cards ------------------------- */
+
+.article-section {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 260px;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.users-logo {
+    width: 16px;
+}
+
+.amount-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------------- 4. Footer --------------------------------------- */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    background-color: #383838;
+    color: white;
+}
+
+
